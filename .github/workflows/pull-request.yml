@@ -1,6 +1,8 @@
 name: Build Pull Request g
 
-on: [ pull_request ]
+on:
+  issues:
+    types: [opened, edited]
 
 jobs:
   build:
